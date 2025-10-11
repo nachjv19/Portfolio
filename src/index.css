@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #00adb5;
+  --color-primary-light: #4DE2E9;
+  --color-dark: #0f172a;
+  --color-light: #f8fafc;
+  --font-sans: "Inter", sans-serif;
+}
+
+/* Reset y base */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background: var(--color-dark);
+  color: var(--color-light);
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 6rem 1rem;
+}
