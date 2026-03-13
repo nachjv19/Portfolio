@@ -25,17 +25,15 @@ export const Skills = () => (
 
         <div className="space-y-6">
           {[
-            { name: "JavaScript", level: 80 },
-            { name: "TypeScript", level: 80 },
-            { name: "Python", level: 70 },
-            { name: "Java", level: 60 },
-            { name: "Node.js", level: 80 },
-            { name: "React", level: 80 },
-            { name: "FastAPI", level: 70 },
-            { name: "Mysql /PostgreSQL / MongoDB", level: 80 },
-            { name: "TailwindCSS / HTML / CSS", level: 90 },
-            { name: "Git / GitHub", level: 85 },
-            { name: "Scrum / Agile", level: 80 },
+            { name: "JavaScript"},
+            { name: "TypeScript"},
+            { name: "Node.js"},
+            { name: "React"},
+            { name: "FastAPI"},
+            { name: "Mysql /PostgreSQL / MongoDB"},
+            { name: "TailwindCSS / HTML / CSS"},
+            { name: "Git / GitHub"},
+            { name: "Scrum / Agile"},
           ].map((skill, i) => (
             <motion.div
               key={i}
@@ -45,18 +43,6 @@ export const Skills = () => (
               transition={{ delay: i * 0.05, duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="flex justify-between mb-1">
-                <span className="font-medium text-gray-300">{skill.name}</span>
-                <span className="text-gray-400 text-sm">{skill.level}%</span>
-              </div>
-              <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden">
-                <motion.div
-                  className="h-2 rounded-full bg-[var(--color-primary-light)]"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.level}%` }}
-                  transition={{ duration: 1.2, ease: "easeOut" }}
-                />
-              </div>
             </motion.div>
           ))}
         </div>
